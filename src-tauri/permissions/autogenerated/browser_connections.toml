@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-browser-connections"
+description = "Enables the browser_connections command without any pre-configured scope."
+commands.allow = ["browser_connections"]
+
+[[permission]]
+identifier = "deny-browser-connections"
+description = "Denies the browser_connections command without any pre-configured scope."
+commands.deny = ["browser_connections"]

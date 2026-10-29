@@ -1,0 +1,22 @@
+[package]
+name = "codebook"
+version.workspace = true
+edition.workspace = true
+default-run = "codebook"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+codebook-core = { path = "../crates/codebook-core", features = ["native"] }
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+zeroize.workspace = true
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-single-instance = "2"
+
+[target.'cfg(windows)'.dependencies]
+windows.workspace = true

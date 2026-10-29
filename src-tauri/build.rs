@@ -1,0 +1,29 @@
+fn main() {
+    tauri_build::try_build(tauri_build::Attributes::new().app_manifest(
+        tauri_build::AppManifest::new().commands(&[
+            "vault_status",
+            "vault_create",
+            "vault_unlock",
+            "vault_lock",
+            "credential_get",
+            "credential_save",
+            "credential_delete",
+            "credential_copy",
+            "list_apps",
+            "describe_app",
+            "save_settings",
+            "vault_change_password",
+            "vault_backup",
+            "vault_verify_backup",
+            "vault_restore",
+            "browser_connections",
+            "browser_pair",
+            "browser_revoke",
+            "quit_app",
+            "picker_state",
+            "fill_confirm",
+            "picker_cancel",
+        ]),
+    ))
+    .expect("Tauri build configuration");
+}

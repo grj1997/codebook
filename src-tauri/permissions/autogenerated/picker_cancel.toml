@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-picker-cancel"
+description = "Enables the picker_cancel command without any pre-configured scope."
+commands.allow = ["picker_cancel"]
+
+[[permission]]
+identifier = "deny-picker-cancel"
+description = "Denies the picker_cancel command without any pre-configured scope."
+commands.deny = ["picker_cancel"]

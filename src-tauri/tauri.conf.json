@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Codebook",
+  "version": "0.1.0",
+  "identifier": "local.codebook.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      { "label": "main", "title": "Codebook · 私有密码库", "width": 1180, "height": 800, "minWidth": 760, "minHeight": 580, "center": true, "generalAutofillEnabled": false },
+      { "label": "picker", "title": "选择账户 · Codebook", "url": "index.html?window=picker", "width": 420, "height": 475, "resizable": false, "visible": false, "alwaysOnTop": true, "skipTaskbar": true, "generalAutofillEnabled": false }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'none'; frame-src 'none'",
+      "capabilities": ["main", "picker"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": ["icons/icon.ico"],
+    "resources": { "../target/release/codebook-native-host.exe": "codebook-native-host.exe", "../shared/extension-id.json": "extension-id.json" },
+    "windows": { "nsis": { "installMode": "currentUser", "languages": ["SimpChinese", "English"], "installerHooks": "installer-hooks.nsh" }, "webviewInstallMode": { "type": "offlineInstaller" } }
+  }
+}

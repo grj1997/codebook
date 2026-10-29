@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-picker-state"
+description = "Enables the picker_state command without any pre-configured scope."
+commands.allow = ["picker_state"]
+
+[[permission]]
+identifier = "deny-picker-state"
+description = "Denies the picker_state command without any pre-configured scope."
+commands.deny = ["picker_state"]

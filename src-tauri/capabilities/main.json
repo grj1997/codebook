@@ -1,0 +1,8 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Only the bundled account management window can manage the vault.",
+  "windows": ["main"],
+  "permissions": ["core:default", "dialog:allow-open", "dialog:allow-save", "allow-vault-status", "allow-vault-create", "allow-vault-unlock", "allow-vault-lock", "allow-credential-get", "allow-credential-save", "allow-credential-delete", "allow-list-apps", "allow-describe-app", "allow-credential-copy", "allow-save-settings", "allow-vault-change-password", "allow-vault-backup", "allow-vault-verify-backup", "allow-vault-restore", "allow-browser-connections", "allow-browser-pair", "allow-browser-revoke", "allow-quit-app"]
+}
+

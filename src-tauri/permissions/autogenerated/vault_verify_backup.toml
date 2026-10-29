@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-vault-verify-backup"
+description = "Enables the vault_verify_backup command without any pre-configured scope."
+commands.allow = ["vault_verify_backup"]
+
+[[permission]]
+identifier = "deny-vault-verify-backup"
+description = "Denies the vault_verify_backup command without any pre-configured scope."
+commands.deny = ["vault_verify_backup"]

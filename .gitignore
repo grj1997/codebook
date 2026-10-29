@@ -1,0 +1,10 @@
+node_modules/
+dist/
+target/
+.tools/
+.implementation/
+*.log
+*.cbvault
+*.cbvault.*
+src-tauri/gen/
+browser-extension/dist/

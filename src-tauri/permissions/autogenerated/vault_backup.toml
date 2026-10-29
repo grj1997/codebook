@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-vault-backup"
+description = "Enables the vault_backup command without any pre-configured scope."
+commands.allow = ["vault_backup"]
+
+[[permission]]
+identifier = "deny-vault-backup"
+description = "Denies the vault_backup command without any pre-configured scope."
+commands.deny = ["vault_backup"]

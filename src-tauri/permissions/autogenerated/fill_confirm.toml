@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-fill-confirm"
+description = "Enables the fill_confirm command without any pre-configured scope."
+commands.allow = ["fill_confirm"]
+
+[[permission]]
+identifier = "deny-fill-confirm"
+description = "Denies the fill_confirm command without any pre-configured scope."
+commands.deny = ["fill_confirm"]

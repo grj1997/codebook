@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "picker",
+  "description": "The picker can only view pending candidates, confirm a specific fill, or cancel.",
+  "windows": ["picker"],
+  "permissions": ["core:event:allow-listen", "core:event:allow-unlisten", "allow-picker-state", "allow-fill-confirm", "allow-picker-cancel"]
+}
